@@ -1,7 +1,9 @@
 var images = [
-	"/imgs/41-37.jpeg",
-	"/imgs/41-50.jpeg",
-	"/imgs/7-27.jpeg"
+	"/imgs/No.7-27.jpeg",
+	"/imgs/No.41-50.jpeg",
+	"/imgs/No.19-5.jpeg",
+	"/imgs/No.19-156.jpeg",
+	"/imgs/No.15-2.jpeg"
 ]
 var time = 5000;
 var i = 0;

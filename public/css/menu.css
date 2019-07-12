@@ -122,6 +122,7 @@
 	display: none;
 }
 .visible{
+	max-width: 400px;
 	width: 30%;
 }
 .hidden{
@@ -136,6 +137,7 @@
 		width: 60%;
 	}
 	.visible{
+		max-width: 100%;
 		width: 100%;
 	}
 
