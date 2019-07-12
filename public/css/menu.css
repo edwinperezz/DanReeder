@@ -48,7 +48,6 @@
 	flex-direction: column;
 	background: #fff;
 	overflow-y: scroll;
-	max-width: 400px;
 	transition: width 0.2s ease;
 }
 .drop-down-menu::-webkit-scrollbar{
@@ -136,10 +135,9 @@
 	#menu-items{
 		width: 60%;
 	}
-	.drop-down-menu{
+	.visible{
 		width: 100%;
 	}
-
 
 	.drop-down-menu a{
 		height: 55px;
