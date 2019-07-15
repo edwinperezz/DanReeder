@@ -13,7 +13,6 @@ function changeImg(){
 	var str = images[i].split("/");
 	str = str[2].split(".",2);
 	str = str.join(".");
-	console.log(str);
 	document.getElementById("img-title").innerHTML = str;
 	if(i < images.length -1){
 		i++;
