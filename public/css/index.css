@@ -67,7 +67,9 @@ body{
 	float: right;
 	padding: 16px;
 }
-
+.left{
+	float: left;
+}
 
 /*////////////////////*/
 /*General Page CSS*/
