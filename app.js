@@ -21,6 +21,9 @@ app.get("/sale", function(req,res){
 app.get("/book", function(req,res){
 	res.render("book");
 });
+app.get("/dodgerphoto",function(req,res){
+	res.render("dodger");
+})
 
 
 app.listen(PORT, process.env.IP, function(){
