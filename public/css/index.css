@@ -242,6 +242,7 @@ a[href="/book/captions"]:hover{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
+		font-size: 0.8em;
 	}
 	.caption img{
 		width: 70%;
