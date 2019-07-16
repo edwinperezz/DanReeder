@@ -192,6 +192,8 @@ a[href="/book/captions"]:hover{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	text-align: center;
+	margin: 20px 0;
 }
 .disclaimer p{
 	margin: 2px 0;
