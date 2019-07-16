@@ -68,10 +68,7 @@ body{
 	padding: 16px;
 	box-sizing: border-box;
 }
-.left{
-	float: left;
-	padding-left: 0;
-}
+
 
 /*////////////////////*/
 /*General Page CSS*/
@@ -114,9 +111,19 @@ body{
 }
 .dodger-img{
 	width: 350px;
-	padding: 3px 10px;
+	padding: 5px 0;
 	padding-left: 0;
 	box-sizing: border-box;
+}
+.left{
+	float: left;
+	padding-left: 0;
+	padding-right: 10px;
+}
+.right{
+	float: right;
+	padding-right: 0;
+	padding-left: 10px;
 }
 
 /*////////////////////*/
