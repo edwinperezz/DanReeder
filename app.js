@@ -21,6 +21,9 @@ app.get("/sale", function(req,res){
 app.get("/book", function(req,res){
 	res.render("book");
 });
+app.get("/book/captions", function(req,res){
+	res.render("captions");
+})
 app.get("/dodgerphoto",function(req,res){
 	res.render("dodger");
 })

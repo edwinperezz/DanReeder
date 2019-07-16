@@ -63,9 +63,9 @@ body{
 /*About Page CSS*/
 /*////////////////////*/
 .about-img{
-	width: 200px;
+	width: 250px;
 	float: right;
-	padding: 16px;
+	margin: 10px;
 	box-sizing: border-box;
 }
 
@@ -86,7 +86,8 @@ body{
 	margin-bottom: 30px;
 	display: flex;
 	height: 80px;
-	
+	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 }
 .title h4{
@@ -111,7 +112,7 @@ body{
 }
 .dodger-img{
 	width: 350px;
-	padding: 5px 0;
+	margin: 5px 0;
 	padding-left: 0;
 	box-sizing: border-box;
 }
@@ -125,13 +126,77 @@ body{
 	padding-right: 0;
 	padding-left: 10px;
 }
-
+a{
+	text-decoration: none;
+	color: inherit;
+}
 /*////////////////////*/
 /*For Sale CSS*/
 /*////////////////////*/
 .sale-container{
 	width: 100%;
 	height: calc(100vh - 115px);
+}
+
+/*////////////////////*/
+/*The book*/
+/*////////////////////*/
+a[href="/book/captions"]:hover{
+	/*color: #ddd;*/
+	text-shadow: 2px 2px 10px rgba(150, 150, 150, 1);
+
+}
+.title h5{
+	margin: 0;
+}
+.caption{
+	width: 100%;
+	margin: 15px 0;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #fbfbfb;
+	-webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.12);
+	box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.12);
+	padding: 5px;
+
+}
+.caption img{
+	width: 250px;
+	float: left;
+	margin: 10px;
+}
+.caption p{
+	margin: 5px;
+}
+.special img{
+	width: 30%;
+	margin: 1.66%;
+
+}
+.subtitle{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.disclaimer{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.disclaimer p{
+	margin: 2px 0;
+	font-size: 0.8em;
+	color: #333;
 }
 
 @media screen and (max-width: 800px){
@@ -145,9 +210,13 @@ body{
 		justify-content: center;
 		align-items: center;
 	}
+	.content p{
+		font-size: 0.8em;
+	}
+
 	.about-img{
-		padding: 10px;
-		width: 180px;
+		margin: 10px auto;
+		width: 100%;
 	}
 	.dodger-img{
 		padding: 10px 0;
@@ -158,11 +227,25 @@ body{
 	.title{
 		margin-top: 40px;
 		height: 60px;
+		justify-content: center;
 	}
 	.title h4{
 		font-size: 1.5em;
 	}
 	.dodger-img{
 		width: 100%;
+	}
+	.caption{
+		height: auto;
+		overflow: hidden;
+		box-sizing: border-box;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.caption img{
+		width: 70%;
+		height: auto;
+		margin: 10px auto;
 	}
 }
