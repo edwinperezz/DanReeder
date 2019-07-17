@@ -212,6 +212,7 @@ a[href="/book/captions"]:hover{
 	}
 	.content p{
 		font-size: 0.8em;
+		box-sizing: border-box;
 	}
 
 	.about-img{
@@ -220,6 +221,7 @@ a[href="/book/captions"]:hover{
 	}
 	.dodger-img{
 		padding: 10px 0;
+		margin: 6px 0;
 	}
 	.container{
 		width: 100%;
