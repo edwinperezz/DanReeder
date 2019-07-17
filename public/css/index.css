@@ -208,6 +208,7 @@ a[href="/book/captions"]:hover{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding: 10px;
 	}
 	.content p{
 		font-size: 0.8em;
@@ -221,7 +222,8 @@ a[href="/book/captions"]:hover{
 		padding: 10px 0;
 	}
 	.container{
-		width: 90%;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	.title{
 		margin-top: 40px;
@@ -244,8 +246,12 @@ a[href="/book/captions"]:hover{
 		font-size: 0.8em;
 	}
 	.caption img{
-		width: 70%;
-		height: auto;
-		margin: 10px auto;
+		left: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		max-width: 100vw;
+		position: relative;
+		right: 50%;
+		width: 100vw;
 	}
 }
