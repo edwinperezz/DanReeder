@@ -167,6 +167,10 @@ a[href="/book/captions"]:hover{
 .caption p{
 	margin: 5px;
 }
+.caption-title{
+	width: 100%;
+	padding-left: 15px;
+}
 .special img{
 	width: 30%;
 	margin: 1.66%;
@@ -246,6 +250,7 @@ a[href="/book/captions"]:hover{
 		flex-wrap: wrap;
 		flex-direction: column;
 		font-size: 0.8em;
+		border-radius: 0;
 	}
 	.caption img{
 		left: 50%;
