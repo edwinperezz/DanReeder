@@ -160,13 +160,7 @@ a[href="/book/captions"]:hover{
 	padding: 5px;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.caption:hover{
-	cursor: pointer;
-	transform: translateY(-10px);
-	-webkit-box-shadow: 0px 10px 14px 2px rgba(0,0,0,0.12);
-	-moz-box-shadow: 0px 10px 14px 2px rgba(0,0,0,0.12);
-	box-shadow: 0px 10px 14px 2px rgba(0,0,0,0.12);
-}
+
 .caption img{
 	width: 250px;
 	margin: 10px;
@@ -182,6 +176,43 @@ a[href="/book/captions"]:hover{
 	width: 30%;
 	margin: 1.66%;
 
+}
+.caption-popup{
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 50%;
+	height: 75%;
+	right: 0;
+	margin: 0 auto;
+	transform: translateY(-50%);
+	background: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.caption-popup p {
+	display: none;
+}
+.caption-popup img{
+	height: 90%;
+	padding: 10px;
+	width: auto;
+	box-sizing: border-box;
+
+}
+.caption-popup .caption-title{
+	width: auto;
+}
+.special .caption-popup  img{
+	width: 30%;
+	height: auto;
+	padding: 10px;
 }
 .subtitle{
 	width: 100%;
@@ -208,7 +239,15 @@ a[href="/book/captions"]:hover{
 	font-size: 0.8em;
 	color: #333;
 }
-
+@media screen and (min-width: 800px){
+	.caption:hover{
+		cursor: pointer;
+		transform: translateY(-10px);
+		-webkit-box-shadow: 0px 10px 14px 2px rgba(0,0,0,0.12);
+		-moz-box-shadow: 0px 10px 14px 2px rgba(0,0,0,0.12);
+		box-shadow: 0px 10px 14px 2px rgba(0,0,0,0.12);
+	}
+}
 @media screen and (max-width: 800px){
 	.copy{
 		font-size: .8em;
