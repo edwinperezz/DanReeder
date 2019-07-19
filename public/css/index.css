@@ -89,7 +89,17 @@ body{
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+	font-family: 'Limelight', cursive;
 }
+.subtitle{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Limelight', cursive;
+}
+
 .title h4{
 	font-size: 2.5em;
 	margin: 0;
@@ -232,13 +242,6 @@ a[href="/book/captions"]:hover{
 	width: 30%;
 	height: auto;
 	padding: 10px;
-}
-.subtitle{
-	width: 100%;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 
