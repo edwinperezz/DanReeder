@@ -7,6 +7,7 @@ body{
 /*////////////////////*/
 /*Home Page CSS*/
 /*////////////////////*/
+
 #footer{
 	width: 100%;
 	height: 70px;
@@ -231,7 +232,36 @@ a[href="/book/captions"]:hover{
 }
 .coming-container h1{
 	text-transform: uppercase;
+	padding: 15px;
 	letter-spacing: 10px;
+	animation: pulse 5s 1;
+}
+@keyframes pulse{
+	0%{
+		background: #000;
+		color: #fff;
+		transform: rotate(45deg);
+	}
+	25%{
+		background: #000;
+		color: #fff;
+		transform: rotate(-30deg);
+
+	}
+	50%{
+		background: #000;
+		color: #fff;
+		transform: rotate(15deg);
+	}
+	75%{
+		background: #000;
+		color: #fff;
+		transform: rotate(-5deg);
+	}
+	100%{
+		background: #fff;
+		color: #000;
+	}
 }
 
 
