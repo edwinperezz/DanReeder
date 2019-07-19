@@ -217,7 +217,7 @@ a[href="/book/captions"]:hover{
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 130px);
 }
 .coming-container h1{
 	text-transform: uppercase;
