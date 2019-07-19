@@ -234,19 +234,26 @@ a[href="/book/captions"]:hover{
 	text-transform: uppercase;
 	padding: 15px;
 	letter-spacing: 10px;
+}
+.text{
 	animation: pulse 5s 1;
 }
 @keyframes pulse{
 	0%{
+		transform: translateY(1000%) scale(3);
 		background: #000;
 		color: #fff;
-		transform: rotate(45deg);
+		/*transform: rotate(45deg);*/
 	}
 	25%{
+		transform: translateY(-100%) scale(1.5);
 		background: #000;
 		color: #fff;
-		transform: rotate(-30deg);
+		/*transform: rotate(-30deg);*/
 
+	}
+	40%{
+		transform: translateY(0) scale(1);
 	}
 	50%{
 		background: #000;
@@ -358,5 +365,10 @@ a[href="/book/captions"]:hover{
 		position: relative;
 		right: 50%;
 		width: 100vw;
+	}
+	.coming-container h1{
+		text-transform: uppercase;
+		padding: 15px;
+		letter-spacing: 5px;
 	}
 }
