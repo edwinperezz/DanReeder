@@ -233,21 +233,45 @@ a[href="/book/captions"]:hover{
 .coming-container h1{
 	text-transform: uppercase;
 	padding: 15px;
+	margin: 0;
 	letter-spacing: 10px;
 }
 .text{
 	animation: pulse 5s 1;
+	border-radius: 25px;
+	background: #000;
+	color: #fff;
+	position: relative;
+}
+.text:before{
+	content: "";
+	position:absolute;
+    bottom:-2px;
+    height:20px;
+	right:-7px;
+	border-right:20px solid #000;
+	border-bottom-left-radius: 16px 14px;
+	transform:translate(0, -2px);
+}
+.text::after {
+	content: "";
+	position:absolute;
+    bottom:-2px;
+    height:20px;
+	right:-56px;
+	width:26px;
+	background:white;
+	border-bottom-left-radius: 10px;
+	transform:translate(-30px, -2px);
 }
 @keyframes pulse{
 	0%{
 		transform: translateY(1000%) scale(3);
-		background: #000;
 		color: #fff;
 		/*transform: rotate(45deg);*/
 	}
 	25%{
 		transform: translateY(-100%) scale(1.5);
-		background: #000;
 		color: #fff;
 		/*transform: rotate(-30deg);*/
 
@@ -256,18 +280,15 @@ a[href="/book/captions"]:hover{
 		transform: translateY(0) scale(1);
 	}
 	50%{
-		background: #000;
 		color: #fff;
 		transform: rotate(15deg);
 	}
 	75%{
-		background: #000;
 		color: #fff;
 		transform: rotate(-5deg);
 	}
 	100%{
-		background: #fff;
-		color: #000;
+		color: #fff;
 	}
 }
 
@@ -367,8 +388,7 @@ a[href="/book/captions"]:hover{
 		width: 100vw;
 	}
 	.coming-container h1{
-		text-transform: uppercase;
-		padding: 15px;
+		font-size: 6vw;
 		letter-spacing: 5px;
 	}
 }
