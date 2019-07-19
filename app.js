@@ -23,10 +23,13 @@ app.get("/book", function(req,res){
 });
 app.get("/book/captions", function(req,res){
 	res.render("captions");
-})
+});
 app.get("/dodgerphoto",function(req,res){
 	res.render("dodger");
-})
+});
+app.get("/comingsoon",function(req,res){
+	res.render("comingsoon");
+});
 
 
 app.listen(PORT, process.env.IP, function(){
