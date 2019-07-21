@@ -90,7 +90,6 @@ body{
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-	font-family: 'Limelight', cursive;
 }
 .subtitle{
 	width: 100%;
@@ -98,7 +97,6 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Limelight', cursive;
 }
 
 .title h4{
@@ -246,8 +244,8 @@ a[href="/book/captions"]:hover{
 .text:before{
 	content: "";
 	position:absolute;
-    bottom:-2px;
-    height:20px;
+	bottom:-2px;
+	height:20px;
 	right:-7px;
 	border-right:20px solid #000;
 	border-bottom-left-radius: 16px 14px;
@@ -256,8 +254,8 @@ a[href="/book/captions"]:hover{
 .text::after {
 	content: "";
 	position:absolute;
-    bottom:-2px;
-    height:20px;
+	bottom:-2px;
+	height:20px;
 	right:-56px;
 	width:26px;
 	background:white;
@@ -301,7 +299,18 @@ a[href="/book/captions"]:hover{
 	height: auto;
 	padding: 10px;
 }
-
+.caption-popup .three-photos{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.caption-popup .three-photos img{
+	width: 30%;
+	height: auto;
+}
 
 
 .disclaimer{
