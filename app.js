@@ -27,6 +27,9 @@ app.get("/book/captions", function(req,res){
 app.get("/dodgerphoto",function(req,res){
 	res.render("dodger");
 });
+app.get("/1975", function(req,res){
+	res.render("1975");
+})
 app.get("/comingsoon",function(req,res){
 	res.render("comingsoon");
 });
