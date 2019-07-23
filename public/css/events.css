@@ -71,25 +71,31 @@
 }
 
 @media screen and (max-width: 800px){
+	.event-title{
+		height: 100px;
+	}
+	.events-container{
+		height: auto;
+	}
 	.grid{
 		height: auto;
-		flex-direction: column;
+		/*flex-direction: column;*/
 	}
 	.grid a{
-		width: 100%;
-		height: auto;
+		width: 50%;
+		height: 30vh;
 		margin: 0;
 	}
 	.events img{
 		width: 100%;
-		height: auto;
+		height: 100%;
 		border-radius: 0;
 	}
 	.event-cover{
 		border-radius: 0;
 	}
 	.event-name{
-		font-size: 10vw;
+		font-size: 5vw;
 	}
 }
 
