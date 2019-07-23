@@ -90,6 +90,9 @@
 }
 
 @media screen and (max-width: 800px){
+	.grid a:focus .event-cover{
+		background: rgba(255,255,255,0.2);
+	}
 	.event-title{
 		height: 100px;
 	}
