@@ -39,7 +39,24 @@ app.get("/1975/lunchtime", function(req,res){
 app.get("/1975/lbfestival", function(req,res){
 	res.render("lbfestival");
 });
-
+app.get("/1975/roxy", function(req,res){
+	res.render("roxy");
+});
+app.get("/1975/agoura", function(req,res){
+	res.render("agoura");
+});
+app.get("/1975/starlight", function(req,res){
+	res.render("starlight");
+});
+app.get("/1975/LBStateWByron", function(req,res){
+	res.render("LBStateWByron");
+});
+app.get("/1975/rodneylbstate", function(req,res){
+	res.render("rodneylbstate");
+});
+app.get("/1975/palomino", function(req,res){
+	res.render("palomino");
+});
 
 app.listen(PORT, process.env.IP, function(){
 	console.log("Server is up!");

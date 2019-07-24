@@ -89,38 +89,13 @@
 	display: flex;
 	justify-content: center;
 }
-.gallery-img:hover .gallery-img img{
-	height: 100%;
-	width: auto;
-}
+
 .gallery-img img{
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	transition: transform 0.4s ease, border 0.4s ease;
 }
-@media screen and (min-width: 800px){
-	.gallery-img img:hover{
-		border: 5px solid black;
-		padding: 10px;
-		box-sizing: border-box;
-		background: white;
-		height: 100%;
-		z-index: 5;
-		width: auto;
-		transform: scale(1.3);
-	}
-	.gallery-img img:focus{
-		border: 5px solid black;
-		padding: 10px;
-		box-sizing: border-box;
-		background: white;
-		height: 100%;
-		z-index: 5;
-		width: auto;
-		transform: scale(1.4);
-	}
-}
+
 
 @media screen and (max-width: 800px){
 	.grid a:focus .event-cover{
