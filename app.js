@@ -36,6 +36,9 @@ app.get("/comingsoon",function(req,res){
 app.get("/1975/lunchtime", function(req,res){
 	res.render("lunchtime");
 });
+app.get("/1975/lbfestival", function(req,res){
+	res.render("lbfestival");
+});
 
 
 app.listen(PORT, process.env.IP, function(){
