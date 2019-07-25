@@ -123,6 +123,27 @@
 	background: black;
 	color: white;
 }
+.twoByTwo{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+.twoByTwo-item{
+	width: 48%;
+	margin: 1%;
+	height: 40vh;
+	position: relative;
+	border-radius: 25px;
+	padding: 
+}
+.twoByTwo-item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+	object-fit: cover;
+}
 
 @media screen and (max-width: 800px){
 	.grid a:focus .event-cover{
@@ -138,9 +159,9 @@
 		height: auto;
 	}
 	.grid a{
-		width: 50%;
+		width: 48%;
 		height: 30vh;
-		margin: 0;
+		margin: 1%;
 	}
 	.events img{
 		width: 100%;
@@ -171,7 +192,9 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.gallery-img img{
+	.pagination{
+		overflow-x: scroll;
+		justify-content: flex-start;
 	}
 }
 

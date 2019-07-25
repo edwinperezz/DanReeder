@@ -57,6 +57,15 @@ app.get("/1975/rodneylbstate", function(req,res){
 app.get("/1975/palomino", function(req,res){
 	res.render("palomino");
 });
+app.get("/1975/dodger", function(req,res){
+	res.render("1975dodger");
+});
+app.get("/1975/dodger/backstage", function(req,res){
+	res.render("dodgerbackstage");
+});
+app.get("/1975/dodger/onstage", function(req,res){
+	res.render("dodgeronstage");
+});
 
 app.listen(PORT, process.env.IP, function(){
 	console.log("Server is up!");
