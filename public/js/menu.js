@@ -9,3 +9,7 @@ $("#drop-down").click(function(){
 $(".photos-menu").click(function(){
 	$(".photo-options").toggleClass("open");
 })
+
+$(document).ready(function(){
+	$("#loading").delay($("#loading").attr("delay-hide")).fadeOut();
+});

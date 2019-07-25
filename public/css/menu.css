@@ -1,4 +1,78 @@
+#loading{
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: white;
+	color: black;
+	position: fixed;
+	z-index: 10000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#loading-wrapper{
+	position: relative;
+}
+#loading-wrapper span{
+	font-size: 5vw;
 
+}
+#loading-wrapper .red-ball{
+	position: absolute;
+	top: 0;
+	left: 60px;
+	height: 100px;
+	width: 100px;
+	background: rgba(255,0,0,0.5);
+	border-radius: 50%;
+	z-index: 10001;
+	animation: jump 8s infinite;
+}
+#loading-wrapper .blue-ball{
+	position: absolute;
+	top: 0;
+	left: 60px;
+	height: 100px;
+	width: 100px;
+	background: rgba(0,0,255,0.5);
+	border-radius: 50%;
+	z-index: 10001;
+	animation: jump 8s infinite;
+	animation-delay: 6s;
+}
+#loading-wrapper .green-ball{
+	position: absolute;
+	top: 0;
+	left: 60px;
+	height: 100px;
+	width: 100px;
+	background: rgba(0,255,0,0.5);
+	border-radius: 50%;
+	z-index: 10001;
+	animation: jump 8s infinite;
+	animation-delay: 3s;
+}
+@keyframes jump{
+	0%{
+		transform: translateY(0);
+	}
+	15%{
+		transform: translate(100px,100px);
+	}
+	30%{
+		transform: translate(-100px,-100px);
+	}
+	45%{
+		transform: translate(0);
+	}
+	60%{
+		transform: translate(100px,-100px);
+	}
+	75%{
+		transform: translate(-100px,100px);
+	}
+}
 #page-container{
 	position: relative;
 	min-height: calc(100vh - 55px);
