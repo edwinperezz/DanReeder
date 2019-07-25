@@ -192,6 +192,9 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.twoByTwo-item img{
+		border-radius: 0;
+	}
 	.pagination{
 		overflow-x: scroll;
 		justify-content: flex-start;
