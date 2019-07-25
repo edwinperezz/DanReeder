@@ -27,6 +27,38 @@ body{
 	background: #ddd;
 	border-radius: 5px;
 }
+.pages{
+	max-width: 400px;
+	overflow: hidden;
+	height: 40px;
+	display: flex;
+}
+.pages a{
+	width: 45px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+.page-nums{
+	max-width: 310px;
+	height: 40px;
+	display: flex;
+	overflow-x: scroll;
+	padding-bottom: 17px;
+}
+#previous-page{
+	background: black;
+	color: white;
+	border-radius: 5px;
+}
+#next-page{
+	background: black;
+	color: white;
+	border-radius: 5px;
+}
+
 
 /*////////////////////*/
 /*Home Page CSS*/

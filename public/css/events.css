@@ -68,10 +68,10 @@
 	transition: font-size 0.2s ease;
 	font-family: 'Teko', sans-serif;
 }
-.grid a:hover .event-cover{
+.event-cover:hover{
 	background: rgba(255,255,255,0.2);
 }
-.grid a:hover .event-name{
+.event-cover:hover .event-name{
 	font-size: 1.8em;
 }
 
@@ -195,10 +195,7 @@
 	.twoByTwo-item img{
 		border-radius: 0;
 	}
-	.pagination{
-		overflow-x: scroll;
-		justify-content: flex-start;
-	}
+	
 }
 
 
