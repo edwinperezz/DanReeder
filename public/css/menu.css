@@ -21,25 +21,24 @@
 #loading-wrapper .red-ball{
 	position: absolute;
 	top: 0;
-	left: 60px;
+	left: 0px;
 	height: 100px;
 	width: 100px;
 	background: rgba(255,0,0,0.5);
 	border-radius: 50%;
 	z-index: 10001;
-	animation: jump 8s infinite;
+	animation: jump 6s infinite;
 }
 #loading-wrapper .blue-ball{
 	position: absolute;
 	top: 0;
-	left: 60px;
+	right: 0;
 	height: 100px;
 	width: 100px;
 	background: rgba(0,0,255,0.5);
 	border-radius: 50%;
 	z-index: 10001;
-	animation: jump 8s infinite;
-	animation-delay: 6s;
+	animation: jumpVThree 6s infinite;
 }
 #loading-wrapper .green-ball{
 	position: absolute;
@@ -50,8 +49,7 @@
 	background: rgba(0,255,0,0.5);
 	border-radius: 50%;
 	z-index: 10001;
-	animation: jump 8s infinite;
-	animation-delay: 3s;
+	animation: jumpVTwo 6s infinite;
 }
 @keyframes jump{
 	0%{
@@ -71,6 +69,46 @@
 	}
 	75%{
 		transform: translate(-100px,100px);
+	}
+}
+@keyframes jumpVTwo{
+	0%{
+		transform: translateY(0);
+	}
+	15%{
+		transform: translate(-100px,100px);
+	}
+	30%{
+		transform: translate(100px,-100px);
+	}
+	45%{
+		transform: translate(0);
+	}
+	60%{
+		transform: translate(-100px,100px);
+	}
+	75%{
+		transform: translate(100px,-100px);
+	}
+}
+@keyframes jumpVThree{
+	0%{
+		transform: translateY(0);
+	}
+	15%{
+		transform: translate(-100,-100px);
+	}
+	30%{
+		transform: translate(-100px,100px);
+	}
+	45%{
+		transform: translate(0);
+	}
+	60%{
+		transform: translate(-100px,-100px);
+	}
+	75%{
+		transform: translate(100px,100px);
 	}
 }
 #page-container{
