@@ -23,6 +23,7 @@ $(".current-page").on("click", function(){
 		for(var i = (grandTotal-limitPerPage); i < grandTotal; i++){
 			$(".gallery-img:eq("+ i + ")").show();
 		}
+		window.scrollTo(0, 0);
 	}
 });
 $("#next-page").on("click", function(){
@@ -38,6 +39,7 @@ $("#next-page").on("click", function(){
 			$(".gallery-img:eq("+ i + ")").show();
 		}
 		document.getElementsByClassName("current-page")[currentPage-1].classList.add("active");
+		window.scrollTo(0, 0);
 
 	}
 });
@@ -54,5 +56,6 @@ $("#previous-page").on("click", function(){
 			$(".gallery-img:eq("+ i + ")").show();
 		}
 		document.getElementsByClassName("current-page")[currentPage-1].classList.add("active");
+		window.scrollTo(0, 0);
 	}
 });
