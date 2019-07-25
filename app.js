@@ -33,6 +33,24 @@ app.get("/1975", function(req,res){
 app.get("/comingsoon",function(req,res){
 	res.render("comingsoon");
 });
+app.get("/1976comingsoon",function(req,res){
+	res.render("1976comingsoon");
+});
+app.get("/1977comingsoon",function(req,res){
+	res.render("1977comingsoon");
+});
+app.get("/1979comingsoon",function(req,res){
+	res.render("1979comingsoon");
+});
+app.get("/1980comingsoon",function(req,res){
+	res.render("1980comingsoon");
+});
+app.get("/1981comingsoon",function(req,res){
+	res.render("1981comingsoon");
+});
+app.get("/1982comingsoon",function(req,res){
+	res.render("1982comingsoon");
+});
 app.get("/1975/lunchtime", function(req,res){
 	res.render("lunchtime");
 });
@@ -65,6 +83,9 @@ app.get("/1975/dodger/backstage", function(req,res){
 });
 app.get("/1975/dodger/onstage", function(req,res){
 	res.render("dodgeronstage");
+});
+app.get("/other", function(req,res){
+	res.render("others");
 });
 
 app.listen(PORT, process.env.IP, function(){
