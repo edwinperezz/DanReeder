@@ -16,6 +16,7 @@ $(".current-page").on("click", function(){
 		return false;
 	} else {
 		var currentPage = $(this).index();
+		currentPage++;
 		$(".page-nums a").removeClass("active");
 		$(this).addClass("active");
 		$(".gallery-img").hide();
@@ -23,19 +24,17 @@ $(".current-page").on("click", function(){
 		for(var i = (grandTotal-limitPerPage); i < grandTotal; i++){
 			$(".gallery-img:eq("+ i + ")").show();
 		}
-		var page = $(".current-page")[currentPage];
+		var page = $(".current-page")[currentPage-1];
 		page.parentNode.scrollLeft = (page.offsetLeft - page.parentNode.offsetLeft);
 	}
 });
 $("#next-page").on("click", function(){
 	var currentPage = $(".page-nums a.active").index();
 	currentPage++;
-	console.log(currentPage);
 	if(currentPage===totalPages){
 		return false;
 	} else{
 		currentPage++;
-		console.log(currentPage);
 		$(".page-nums a").removeClass("active");
 		$(".gallery-img").hide();
 		var grandTotal = currentPage * limitPerPage;
@@ -55,7 +54,6 @@ $("#previous-page").on("click", function(){
 		return false;
 	} else{
 		currentPage--;
-		console.log(currentPage);
 		$(".page-nums a").removeClass("active");
 		$(".gallery-img").hide();
 		var grandTotal = currentPage * limitPerPage;
