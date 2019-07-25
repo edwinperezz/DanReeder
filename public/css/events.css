@@ -94,7 +94,35 @@
 	width: 100%;
 	object-fit: contain;
 }
-
+.back{
+	position: sticky;
+	top: 70px;
+	left: 0;
+	margin: 15px;
+	height: 40px;
+	width: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	font-weight: 700;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+	transition: background 0.3s ease, color 0.3s ease;
+}
+.back a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.back:hover{
+	background: black;
+	color: white;
+}
 
 @media screen and (max-width: 800px){
 	.grid a:focus .event-cover{
